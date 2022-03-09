@@ -4,4 +4,6 @@ When playing online, you can invite friends to beat your score.
 
 ## Game Rules:
 1. The object of the game is to get the answers correct and beat your opponent's high score.
-1. The object of the game is to get the answers correct and beat your opponent's high score.
+
+## wireframe
+![image](wireframe.png)
