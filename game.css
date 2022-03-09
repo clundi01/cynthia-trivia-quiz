@@ -1,0 +1,20 @@
+body {
+    color:rgb(231, 231, 241)
+
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: #743cf6;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: progress;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}

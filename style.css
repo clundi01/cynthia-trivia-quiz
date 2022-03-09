@@ -57,3 +57,12 @@
     cursor: progress;
     transform: scale(1.03);
 }
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* #highscore-btn {
+    background: 
+} */
