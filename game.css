@@ -1,5 +1,5 @@
 body {
-    color:rgb(231, 231, 241)
+    color:rgb(18, 102, 18)
 
 }
 
@@ -8,7 +8,7 @@ body {
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background: #743cf6;
+    background: rgb(18, 93, 255);
     font-size: 3rem;
     min-width: 80rem;
 }
@@ -17,4 +17,20 @@ body {
     cursor: progress;
     transform: scale(1.02);
     transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color:azure
+}
+
+.choice-text{
+    padding: 2rem;
+    width: 100%;
+}
+
+@media  screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem
+    }
 }
