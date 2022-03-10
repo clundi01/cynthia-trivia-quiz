@@ -1,5 +1,5 @@
 body {
-    color:rgb(18, 102, 18)
+    color:rgb(17, 19, 17)
 
 }
 
@@ -27,6 +27,10 @@ body {
 .choice-text{
     padding: 2rem;
     width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11,233,36) 0%, rgb(41, 232, 111) 100%);
 }
 
 @media  screen and (max-width: 768px) {
