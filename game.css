@@ -3,6 +3,14 @@ body {
 
 }
 
+#question {
+    font-size: 30px;
+}
+
+#score {
+    font-size: 30px
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
