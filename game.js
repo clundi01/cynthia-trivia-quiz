@@ -2,11 +2,11 @@ const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('progressText');
 const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#question');
+const progressBarFull = document.querySelector('#progressBarFull');
 
 // new varibles 
 
-let currentQuestions ={}
+let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
 let questionCounter = 0 
@@ -18,7 +18,7 @@ let questions = [
         choice1: 'Developing a website that looks good on desktop, tablets, and mobile devices',
         choice2: 'Retrieving information from the proper data sources',
         choice3: 'Adding content to a webpage',
-        choice4: '',
+        choice4: 'None Apply',
         answer:1,
     },
     {
@@ -26,7 +26,7 @@ let questions = [
         choice1:'<nav>',
         choice2:'<ul> in the <na>',
         choice3:'The <li> is in the <nav>',
-        choice4:'',
+        choice4:'None apply',
         answer:3,
     },
     {
@@ -80,18 +80,40 @@ choice.forEach(choice => {
     choice.InnerText = currentQuestion['choice' + number]
 })
 
-availableQuestions.splice(questionsIndex, 1)
+availableQuestions.splice(questionIndex, 1)
 
 acceptingAnswers = true
 
 }
 
 choices.forEach(choice => {
+    choice.addEventListener('click', e => {
     if(!acceptingAnswers) return
     
     acceptingAnswers = false
     const selectedChoice = e.target
-    const selectedAnswer = selectedChoice.dataset{
-        
+    const selectedAnswer = selectedChoice.dataset['number']
+
+    let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'inncorrect'
+    
+    if(classToApply === 'correct') {
+        incrementScore(SCORE_POINTS)
     }
+
+    selectedChoice.parentElement.classlist.remove(classToApply)
+    
+    setTimeout(() => {
+        selectedChoice.parentElement.classList.remove(classToApply)
+        getNewQuestion ()
+
+        },1000)
+    })
 })
+    
+incrementScore = num => {
+    score+=num
+    scoreText.innerText = score
+}
+
+
+    
