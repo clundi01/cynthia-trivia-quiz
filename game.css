@@ -49,6 +49,7 @@ body {
 #hud {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hud-prefix {
@@ -58,6 +59,7 @@ body {
 
 .hud-main-text {
     text-align: center;
+
 }
 
 #progressBar {
