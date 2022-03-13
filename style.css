@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poiret+One&family=Smooch+Sans:wght@300&display=swap');
 
+<<<<<<< Updated upstream
 
 div
+=======
+>>>>>>> Stashed changes
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,15 +13,21 @@ div
     font-family: 'League Gothic', sans-serif; 
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .container {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+    position: relative;
+    bottom: 700px;
 
 }
 
@@ -33,7 +42,7 @@ div
 }
 
 .justify-center {
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .text-center {
@@ -64,8 +73,4 @@ div
 .btn[disabled]:hover {
     cursor: not-allowed;
     transform: none;
-}
-
-#highscore-btn {
-    background: linear-gradient(90deg, #3f87a6, #ebf8e1, #f69d3c) 0%;
-}
+} ;

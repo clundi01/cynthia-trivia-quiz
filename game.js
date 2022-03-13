@@ -1,3 +1,4 @@
+// Variables
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('progressText');
@@ -86,6 +87,7 @@ acceptingAnswers = true
 
 }
 
+// event listeners
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
     if(!acceptingAnswers) return

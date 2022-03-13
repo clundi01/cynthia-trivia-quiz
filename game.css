@@ -3,6 +3,19 @@ body {
 
 }
 
+<<<<<<< Updated upstream
+=======
+#question {
+    font-size: 30px;
+
+    
+}
+
+#score {
+    font-size: 30px
+}
+
+>>>>>>> Stashed changes
 .choice-container {
     display: flex;
     margin-bottom: 0.8rem;
@@ -55,7 +68,7 @@ body {
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(41, 232, 111);
+    border: 0.2rem solid rgb(41, 54, 232);
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -63,7 +76,7 @@ body {
 
 #progressBarFull {
     height: 100%;
-    background: rgb(41, 232, 111);
+    background: rgb(62, 49, 241);
     width: 0%;
 }
 
