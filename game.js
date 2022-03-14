@@ -10,6 +10,8 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
+
+// save it to a variable called questions. so let questions equal to an array now within this array and created objects
 let questions = [
     {
         question: 'Which of the following elements should we target with display: inline to make the <nav> horizontal?',
@@ -48,10 +50,15 @@ let questions = [
 
     }
 ]
+//constant here say constant score underscore points, it's capitalizing because I 
+//know in JavaScript that um essentially if something's going to be a fixed and you're not 
+//planning on changing. so it's set 100 here and then I did an arrow syntax and set the 
+// question counter is starting at zero and score can be at zero.
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
 
+//function to start the game
 startGame = () => {
     questionCounter = 0
     score = 0
@@ -59,6 +66,8 @@ startGame = () => {
     getNewQuestion()
 }
 
+//to say if available questions.length its equal to zero or the questions counter is greater 
+//than the max questioms underscore questions.
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
