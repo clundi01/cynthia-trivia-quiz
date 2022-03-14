@@ -1,18 +1,17 @@
-body {
-    color: rgb(14, 13, 13);
-    
+#question {
+    font-size: 20px;
 }
 
 .choice-container {
-    display: flex;
-    margin-bottom: 2px;
-    padding-left: 100px;
-    width: 50%;
-    border-radius: 4px;
-    background: rgb(18, 93, 255);
-    font-size: 15px;
-    min-width: 50px;
-}
+        display: flex;
+        margin-bottom: 5px;
+        height: 100px;
+        /* padding: 10px; */
+        /* width: 50%; */
+        border: 2px;
+        background: rgb(18, 93, 255);
+    }
+
 
 .choice-container:hover {
     cursor: pointer;
@@ -22,12 +21,16 @@ body {
 }
 
 .choice-prefix {
+    font-size: 20px;
     padding: 2rem 2.5rem;
     color: rgb(14, 13, 13);
 }
 
 .choice-text {
-    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
     width: 100%;
 }
 
@@ -48,19 +51,26 @@ body {
 
 .hud-prefix {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
+
 
 .hud-main-text {
     text-align: center;
 }
 
+.hud-item{
+    /* display: flex;
+    align-items: center; */
+    /* display: inline-block; */
+}
+
 #progressBar {
-    width:100px;
+    width: 100px;
     height: 48px;
     border: 8px solid rgb(11,223,36);
-    margin-top: 32px;
-    border-radius: 50px;
+    margin-top: 20px;
+    border-radius: 25px;
     overflow: hidden;
 }
 

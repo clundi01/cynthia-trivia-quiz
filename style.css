@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poiret+One&family=Smooch+Sans:wght@300&display=swap');
 
-background {
-    background:#f69d3c
+body {
+    background:linear-gradient(150deg, rgb(19, 67, 212), rgb(225, 65, 204) 60%, darkorange 60%, darkorange);
 
 };
 
@@ -42,6 +42,7 @@ background {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .text-center {
@@ -72,8 +73,4 @@ background {
 .btn[disabled]:hover {
     cursor: not-allowed;
     transform: none;
-}
-
-#highscore-btn {
-    background: linear-gradient(90deg, #3f87a6, #ebf8e1, #f69d3c) 0%;
 }
