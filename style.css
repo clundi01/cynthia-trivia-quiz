@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poiret+One&family=Smooch+Sans:wght@300&display=swap');
 
+background {
+    background:#f69d3c
+
+};
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
+    font-size: 50.5%;
     font-family: 'League Gothic', sans-serif; 
 
 }
-
 
 
 .container {
@@ -37,6 +40,8 @@
 
 .justify-center {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-center {
